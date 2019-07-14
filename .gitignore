@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Vernekar.SOLID.SRP/obj/Debug
+/Vernekar.SOLID.SRP/bin/Debug
+/Vernekar.SOLID.Principle/obj/Debug
+/Vernekar.SOLID.Principle/bin/Debug
+/Vernekar.SOLID.OCP/obj/Debug
+/Vernekar.SOLID.OCP/bin/Debug
+/Vernekar.SOLID.LSP/obj/Debug
+/Vernekar.SOLID.LSP/bin/Debug
+/Vernekar.SOLID.ISP/obj/Debug
+/Vernekar.SOLID.ISP/bin/Debug
+/Vernekar.SOLID.DIP/obj/Debug
+/Vernekar.SOLID.DIP/bin/Debug
