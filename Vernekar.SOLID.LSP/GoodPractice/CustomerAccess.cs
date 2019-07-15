@@ -13,14 +13,13 @@ namespace Vernekar.SOLID.LSP.GoodPractice
         /// Earier it was throwing an exception, now, it is abstracted with type of Access 
         /// </summary>
         /// <param name="customerRelationships">Collection of all the customer</param>
-        /// <param name="customerId">Customer ID</param>
         /// <returns></returns>
-        public string GetResortAccessCustomer(List<IResort> customerRelationships, string customerId)
+        public string GetResortAccessCustomer(List<IResort> customerRelationships)
         {
             string result = null;
             foreach (var cust in customerRelationships)
             {
-                result = cust.GetResortAccessDetails(customerId);
+                result = cust.GetResortAccessDetails();
                 break;
             }
             return result;
@@ -30,14 +29,13 @@ namespace Vernekar.SOLID.LSP.GoodPractice
         /// Here customer strong type of IClub
         /// </summary>
         /// <param name="customerRelationships">Collection of all the customer</param>
-        /// <param name="customerId">Customer ID</param>
         /// <returns></returns>
-        public string GetClubAccessCustomer(List<IClub> customerRelationships, string customerId)
+        public string GetClubAccessCustomer(List<IClub> customerRelationships)
         {
             string result = null;
             foreach (var cust in customerRelationships)
             {
-                result = cust.GetClubAccessDetails(customerId);
+                result = cust.GetClubAccessDetails();
                 break;
             }
             return result;

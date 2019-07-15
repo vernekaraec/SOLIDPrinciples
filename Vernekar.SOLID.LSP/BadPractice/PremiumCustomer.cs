@@ -6,16 +6,16 @@ namespace Vernekar.SOLID.LSP.BadPractice
     /// </summary>
     public class PremiumCustomer : CustomerRelationship
     {
-        public override string GetClubAccessDetails(string customerId)
+        public override string GetClubAccessDetails()
         {
             //Access Club Area
-            return "DateTime:ID:Area:TimeIn:TimeOut:Accessories";
+            return "DateTime:ID:Area:TimeIn:TimeOut:AccessArea";
         }
 
-        public override string GetResortAccessDetails(string customerId)
+        public override string GetResortAccessDetails()
         {
             //Access Resort Area
-            return "DateTime:ID:Area:TimeIn:TimeOut:Accessories";
+            return "DateTime:ID:Area:TimeIn:TimeOut:AccessArea";
         }
     }
 }

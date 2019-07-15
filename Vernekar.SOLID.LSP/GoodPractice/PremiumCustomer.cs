@@ -3,14 +3,14 @@ namespace Vernekar.SOLID.LSP.GoodPractice
 {
     public class PremiumCustomer : IClub, IResort
     {
-        public string GetClubAccessDetails(string customerId)
+        public string GetClubAccessDetails()
         {
-            return "DateTime:ID:Area:TimeIn:TimeOut:Accessories";
+            return "DateTime:ID:Area:TimeIn:TimeOut:AccessArea";
         }
 
-        public string GetResortAccessDetails(string customerId)
+        public string GetResortAccessDetails()
         {
-            return "DateTime:ID:Area:TimeIn:TimeOut:Accessories";
+            return "DateTime:ID:Area:TimeIn:TimeOut:AccessArea";
         }
     }
 }

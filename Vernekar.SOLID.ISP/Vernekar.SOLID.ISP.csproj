@@ -43,13 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BadPractice\ILoggerManager.cs" />
+    <Compile Include="BadPractice\IDatabaseLogManager.cs" />
     <Compile Include="BadPractice\MongoDBLogger.cs" />
-    <Compile Include="BadPractice\TextLogger.cs" />
-    <Compile Include="GoodPractice\ILoggerRead.cs" />
-    <Compile Include="GoodPractice\ILoggerWrite.cs" />
+    <Compile Include="GoodPractice\IDatabaseLogManagerV2.cs" />
+    <Compile Include="GoodPractice\IDatabaseLogManager.cs" />
     <Compile Include="GoodPractice\MongoDBLogger.cs" />
-    <Compile Include="GoodPractice\TextLogger.cs" />
+    <Compile Include="GoodPractice\MongoDBLoggerV2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

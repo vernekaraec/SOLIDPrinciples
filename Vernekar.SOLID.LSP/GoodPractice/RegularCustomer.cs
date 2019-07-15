@@ -6,9 +6,9 @@ namespace Vernekar.SOLID.LSP.GoodPractice
     /// </summary>
     public class RegularCustomer : IClub
     {
-        public string GetClubAccessDetails(string customerId)
+        public string GetClubAccessDetails()
         {
-            return "DateTime:ID:Area:TimeIn:TimeOut:Accessories";
+            return "DateTime:ID:Area:TimeIn:TimeOut:AccessArea";
         }
     }
 }

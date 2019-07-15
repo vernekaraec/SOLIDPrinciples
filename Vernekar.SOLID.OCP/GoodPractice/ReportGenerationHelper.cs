@@ -10,7 +10,7 @@ namespace Vernekar.SOLID.OCP.GoodPractice
         public string ReportType { get; set; }
 
         /// <summary>
-        /// Genrate the report of the customer
+        /// Generate the report of the customer
         /// Generates the report of Excel, Word or PDF
         /// </summary>
         /// <param name="customer">Customer data</param>

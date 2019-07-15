@@ -14,15 +14,13 @@ namespace Vernekar.SOLID.LSP.BadPractice
         /// Here is the solution - Abstaction of Club and Resort area as Interface. We will see in 'GoodPractice' folder
         /// </summary>
         /// <param name="customerRelationships">Collection of all the customer</param>
-        /// <param name="customerId">Customer ID</param>
         /// <returns></returns>
-        public string GetResortAccessCustomer(List<CustomerRelationship> customerRelationships, string customerId)
+        public string GetResortAccessCustomer(List<CustomerRelationship> customerRelationships)
         {
             string result = null;
             foreach (var cust in customerRelationships)
             {
-                result = cust.GetResortAccessDetails(customerId);
-                break;
+                result = cust.GetResortAccessDetails();
             }
             return result;
         }
@@ -31,15 +29,13 @@ namespace Vernekar.SOLID.LSP.BadPractice
         /// When client check for customer data of Resort Access, Regular customer will have an access of Resort and no problem at here!
         /// </summary>
         /// <param name="customerRelationships">Collection of all the customer</param>
-        /// <param name="customerId">Customer ID</param>
         /// <returns></returns>
-        public string GetClubAccessCustomer(List<CustomerRelationship> customerRelationships, string customerId)
+        public string GetClubAccessCustomer(List<CustomerRelationship> customerRelationships)
         {
             string result = null;
             foreach (var cust in customerRelationships)
             {
-                result = cust.GetClubAccessDetails(customerId);
-                break;
+                result = cust.GetClubAccessDetails();
             }
             return result;
         }

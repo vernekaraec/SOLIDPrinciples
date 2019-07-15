@@ -1,4 +1,7 @@
 ﻿
+using System.Collections.Generic;
+using Vernekar.SOLID.LSP.BadPractice;
+
 namespace Vernekar.SOLID.LSP
 {
     /// <summary>
@@ -15,6 +18,14 @@ namespace Vernekar.SOLID.LSP
     {
         static void Main(string[] args)
         {
+            CustomerAccess customerAccess = new CustomerAccess();
+
+            List<CustomerRelationship> list = new List<CustomerRelationship>();
+            list.Add(new PremiumCustomer() { });
+            list.Add(new PremiumCustomer() { });
+            list.Add(new RegularCustomer() { });
+
+            customerAccess.GetResortAccessCustomer(list);
         }
     }
 }

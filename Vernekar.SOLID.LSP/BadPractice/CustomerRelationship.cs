@@ -3,16 +3,16 @@ namespace Vernekar.SOLID.LSP.BadPractice
 {
     public class CustomerRelationship
     {
-        public virtual string GetClubAccessDetails(string customerId)
+        public virtual string GetClubAccessDetails()
         {
             //Access Club Area
-            return "DateTime:ID:Area:TimeIn:TimeOut:Accessories";
+            return "DateTime:ID:Area:TimeIn:TimeOut:AccessArea";
         }
 
-        public virtual string GetResortAccessDetails(string customerId)
+        public virtual string GetResortAccessDetails()
         {
             //Acess Resort Area
-            return "DateTime:ID:Area:TimeIn:TimeOut:Accessories";
+            return "DateTime:ID:Area:TimeIn:TimeOut:AccessArea";
         }
     }
 }
