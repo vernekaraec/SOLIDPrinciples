@@ -44,15 +44,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BadPractice\CustomerAccess.cs" />
-    <Compile Include="BadPractice\PremiumCustomer.cs" />
+    <Compile Include="BadPractice\PlatinumCustomer.cs" />
+    <Compile Include="BadPractice\GoldCustomer.cs" />
     <Compile Include="BadPractice\CustomerRelationship.cs" />
-    <Compile Include="BadPractice\RegularCustomer.cs" />
+    <Compile Include="BadPractice\TitaniumCustomer.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="GoodPractice\CustomerAccess.cs" />
+    <Compile Include="GoodPractice\CustomerRelationship.cs" />
+    <Compile Include="GoodPractice\GoldCustomer.cs" />
     <Compile Include="GoodPractice\IClub.cs" />
     <Compile Include="GoodPractice\IResort.cs" />
-    <Compile Include="GoodPractice\PremiumCustomer.cs" />
-    <Compile Include="GoodPractice\RegularCustomer.cs" />
+    <Compile Include="GoodPractice\PlatinumCustomer.cs" />
+    <Compile Include="GoodPractice\TitaniumCustomer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

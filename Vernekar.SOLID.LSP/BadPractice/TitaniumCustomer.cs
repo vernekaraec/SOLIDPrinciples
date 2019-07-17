@@ -2,21 +2,21 @@
 namespace Vernekar.SOLID.LSP.BadPractice
 {
     using System;
+    using System.Collections.Generic;
 
     /// <summary>
     /// This class fit for SRP and OCP, Here it get violates with LSP for 'GetResortAccessDetails' when i have access with base type 'CustomerRelationship'
     /// </summary>
-    public class RegularCustomer : CustomerRelationship
+    public class TitaniumCustomer : CustomerRelationship
     {
-        public override string GetClubAccessDetails()
+        public override List<string> GetClubAccessDetails()
         {
             //Access Club Area
-            return "DateTime:ID:Area:TimeIn:TimeOut:AccessArea";
+            return new List<string>() { "CArea1", "CArea2", "CArea3", "CArea4", "CArea5" };
         }
 
-        public override string GetResortAccessDetails()
+        public override List<string> GetResortAccessDetails()
         {
-            //NO Access Resort Area
             throw new NotImplementedException();
         }
     }

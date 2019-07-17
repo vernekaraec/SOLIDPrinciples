@@ -14,15 +14,12 @@ namespace Vernekar.SOLID.LSP.GoodPractice
         /// </summary>
         /// <param name="customerRelationships">Collection of all the customer</param>
         /// <returns></returns>
-        public string GetResortAccessCustomer(List<IResort> customerRelationships)
+        public void GetResortAccessCustomer(List<CustomerRelationship> customerRelationships)
         {
-            string result = null;
             foreach (var cust in customerRelationships)
             {
-                result = cust.GetResortAccessDetails();
-                break;
+                cust.GetResortAccessDetails();
             }
-            return result;
         }
 
         /// <summary>
@@ -30,15 +27,12 @@ namespace Vernekar.SOLID.LSP.GoodPractice
         /// </summary>
         /// <param name="customerRelationships">Collection of all the customer</param>
         /// <returns></returns>
-        public string GetClubAccessCustomer(List<IClub> customerRelationships)
+        public void GetClubAccessCustomer(List<IClub> customerRelationships)
         {
-            string result = null;
             foreach (var cust in customerRelationships)
             {
-                result = cust.GetClubAccessDetails();
-                break;
+                cust.GetClubAccessDetails();
             }
-            return result;
         }
     }
 }

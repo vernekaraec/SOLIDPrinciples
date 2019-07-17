@@ -1,9 +1,9 @@
 ﻿
 using System.Collections.Generic;
 
-namespace Vernekar.SOLID.LSP.BadPractice
+namespace Vernekar.SOLID.LSP.GoodPractice
 {
-    public abstract class CustomerRelationship
+    public abstract class CustomerRelationship : IClub, IResort
     {
         public abstract List<string> GetClubAccessDetails();
 

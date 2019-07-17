@@ -10,9 +10,10 @@ namespace Vernekar.SOLID.LSP
     /// in the same manner without modification"
     /// Child class should not break parent class’s type definition and behavior.
     /// 
-    /// We can illustrate with 'Customer' class as 'Premium Customer' class and 'Regular Customer' class
-    /// 'Premium Customer' have an access of 'club' and 'Resort'
-    /// 'Regular Customer' have an access of only 'club'
+    /// We can illustrate with 'Customer' class as 'Gold Customer' class, 'Platinium Customer' class and 'Titanium Customer' class
+    /// 'Gold Customer' have an access of 'club' and 'Resort'
+    /// 'Platinium Customer' have an access of 'club' and 'Resort'
+    /// 'Titanium Customer' have an access of only 'club'
     /// </summary>
     class Program
     {
@@ -20,12 +21,12 @@ namespace Vernekar.SOLID.LSP
         {
             CustomerAccess customerAccess = new CustomerAccess();
 
-            List<CustomerRelationship> list = new List<CustomerRelationship>();
-            list.Add(new PremiumCustomer() { });
-            list.Add(new PremiumCustomer() { });
-            list.Add(new RegularCustomer() { });
+            List<CustomerRelationship> crs = new List<CustomerRelationship>();
+            crs.Add(new GoldCustomer() { });
+            crs.Add(new PlatinumCustomer() { });
+            crs.Add(new TitaniumCustomer() { });
 
-            customerAccess.GetResortAccessCustomer(list);
+            customerAccess.GetResortAccessCustomer(crs);
         }
     }
 }

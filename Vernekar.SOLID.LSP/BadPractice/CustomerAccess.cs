@@ -9,35 +9,31 @@ namespace Vernekar.SOLID.LSP.BadPractice
     public class CustomerAccess
     {
         /// <summary>
-        /// When client check for customer data of Resort Access, Regular customer will not have an access of Resort and throws exception and violating the LSP
+        /// When client check for customer data of Resort Access, Titanium customer will not have an access of Resort and throws exception and violating the LSP
         /// How we can overcome this issue? 
         /// Here is the solution - Abstaction of Club and Resort area as Interface. We will see in 'GoodPractice' folder
         /// </summary>
         /// <param name="customerRelationships">Collection of all the customer</param>
         /// <returns></returns>
-        public string GetResortAccessCustomer(List<CustomerRelationship> customerRelationships)
+        public void GetResortAccessCustomer(List<CustomerRelationship> customerRelationships)
         {
-            string result = null;
             foreach (var cust in customerRelationships)
             {
-                result = cust.GetResortAccessDetails();
+                cust.GetResortAccessDetails();
             }
-            return result;
         }
 
         /// <summary>
-        /// When client check for customer data of Resort Access, Regular customer will have an access of Resort and no problem at here!
+        /// When client check for customer data of Resort Access, Titanium customer will have an access of Resort and no problem at here!
         /// </summary>
         /// <param name="customerRelationships">Collection of all the customer</param>
         /// <returns></returns>
-        public string GetClubAccessCustomer(List<CustomerRelationship> customerRelationships)
+        public void GetClubAccessCustomer(List<CustomerRelationship> customerRelationships)
         {
-            string result = null;
             foreach (var cust in customerRelationships)
             {
-                result = cust.GetClubAccessDetails();
+                cust.GetClubAccessDetails();
             }
-            return result;
         }
     }
 }
