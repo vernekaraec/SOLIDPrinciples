@@ -10,9 +10,9 @@ namespace Vernekar.SOLID.LSP
     /// in the same manner without modification"
     /// Child class should not break parent class’s type definition and behavior.
     /// 
-    /// We can illustrate with 'Customer' class as 'Gold Customer' class, 'Platinium Customer' class and 'Titanium Customer' class
+    /// We can illustrate with 'Customer' class as 'Gold Customer' class, 'Platinum Customer' class and 'Titanium Customer' class
     /// 'Gold Customer' have an access of 'club' and 'Resort'
-    /// 'Platinium Customer' have an access of 'club' and 'Resort'
+    /// 'Platinum Customer' have an access of 'club' and 'Resort'
     /// 'Titanium Customer' have an access of only 'club'
     /// </summary>
     class Program
